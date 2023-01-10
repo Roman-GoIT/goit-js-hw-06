@@ -1,18 +1,13 @@
 //кількість категорій
-//const categoriesNumber = document.querySelectorAll('li.item');
-//console.log('Number of categories:', categoriesNumber);
-
-//кількість елементів
-//const elementsNumber = document.querySelectorAll('.option');
-//console.log(elementsNumber);
+const categoriesNumber = document.querySelectorAll('li.item');
+console.log('Number of categories:', categoriesNumber);
 
 
-//console.log(categoriesNumber)
-function quantity(categoriesNumber) {
-    let totalNumber = 0;
+ categoriesNumber.forEach(category => {
 
-    categoriesNumber.forEach((item) => totalNumber += item);
-      return totalNumber;
-      console.log(totalNumber);
-}
+  const smth = querySelector('.item');
+  smth.firstElementChild;
+  console.log(smth);
+  console.log(smth.textContent);
 
+ })
