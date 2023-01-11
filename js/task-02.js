@@ -21,3 +21,5 @@ const categories = ingredients.map(ingredient => {
 recepy.append(...categories);
 console.log(categories);
 console.log(recepy.textContent);
+
+//IS IT CORRECT?
