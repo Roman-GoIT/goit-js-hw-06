@@ -23,3 +23,5 @@ const info = images.map(({url, alt}) =>
 console.log(info);
 
 list.incertAdjacentHTML('beforeend', info)
+
+//
