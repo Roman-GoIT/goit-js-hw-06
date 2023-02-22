@@ -18,10 +18,10 @@ const list = document.querySelectorAll('.gallery');
 const info = images.map(({url, alt}) =>
 `<li>
 <img src="${url}" alt="${alt}" class = "image">
-</li>`)
+</li>`).join(" ")
 
 console.log(info);
+list.insertAdjacentHTML("beforeend", info);
 
-list.incertAdjacentHTML('beforeend', info)
 
 //
