@@ -22,6 +22,3 @@ const info = images.map(({url, alt}) =>
 
 console.log(info);
 list.insertAdjacentHTML("beforeend", info);
-
-
-//

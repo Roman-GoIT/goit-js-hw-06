@@ -1,13 +1,11 @@
 //кількість категорій
 const categoriesNumber = document.querySelectorAll('li.item');
-console.log('Number of categories:', categoriesNumber);
+console.log('Number of categories:', categoriesNumber.length);
 
 
  categoriesNumber.forEach(category => {
-
-  const smth = querySelector('.item');
-  smth.firstElementChild;
-  console.log(smth);
-  console.log(smth.textContent);
-
+//Назва категорії
+ console.log('Category:', category.firstElementChild.textContent);
+ //Кількість елементів
+ console.log('Elements:', category.lastElementChild.children.length)
  })
