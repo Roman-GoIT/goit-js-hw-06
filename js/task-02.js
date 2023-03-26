@@ -22,4 +22,8 @@ recepy.append(...categories);
 console.log(categories);
 console.log(recepy.textContent);
 
-//IS IT CORRECT?
+
+
+
+
+

@@ -1,32 +1,21 @@
-// Відображає поточне значення лічильника
-const counterValue = document.querySelector('.js-value');
-//counterValue = 0;
-console.log(counterValue);
-//counterValue.textContent; - maybe this option
+const counter = document.querySelector("#value");
+const increment = document.querySelector('button[data-action = "increment"]');
+const decrement = document.querySelector('button[data-action = "decrement"]');
 
+let counterValue = 0;
 
-//Кнопка віднімання
-const decrement = document.querySelector('.js-decr');
-console.log(decrement);
+increment.addEventListener("click", upClick);
+ 
+function upClick() {
+    counterValue += 1;
+    counter.textContent = counterValue;
+};
 
-decrement.addEventListener('click', minus);
-let step = 1;
+decrement.addEventListener("click", downClick);
+  
+function  downClick() {
+    counterValue -= 1;
+    counter.textContent = counterValue;
+};
+   
 
-function minus(evt) {
-    console.log(evt.currentTarget);
-    //counterValue -= step;
-    step -= 1;
-    counterValue.textContent;
-}
-
-//Кнопка додавання
-const increment = document.querySelector('.js-incr');
-console.log(increment);
-
-increment.addEventListener('click', plus);
-function plus(evt) {
-    console.log(evt.currentTarget);
-    step += 1;
-    //increment.textContent; - може цей варіант
-    counterValue.textContent;
-}

@@ -13,12 +13,17 @@ const images = [
   },
 ];
 
-const list = document.querySelectorAll('.gallery');
+const list = document.querySelector('.gallery');
 
 const info = images.map(({url, alt}) =>
 `<li>
 <img src="${url}" alt="${alt}" class = "image">
-</li>`).join(" ")
+</li>`).join("");
 
 console.log(info);
 list.insertAdjacentHTML("beforeend", info);
+
+
+//  Чому в const list 
+//  використовуєм querySelector,
+//  а не querySelectorAll?
