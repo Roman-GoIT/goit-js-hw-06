@@ -8,7 +8,7 @@ function handleSubmit(evt) {
     const { elements: { email, password }} = evt.currentTarget;
     
     if (email.value === "" || password.value === "") {
-        return console.log("Fill in all the fields please")
+        return alert("Fill in all the fields please");
     }
 
     console.log(`Email: ${email.value}, Password: ${password.value}`);
